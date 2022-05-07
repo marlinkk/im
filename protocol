@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package goim.protocol;
+
+option go_package = "github.com/marlinkk/im/protocol;protocol";
+
+/*
+ * v1.0.0
+ * protocol
+ */
+message Proto {
+    int64 ver = 1;
+    int64 op = 2;
+    int64 seq = 3;
+    bytes body = 4;
+}
